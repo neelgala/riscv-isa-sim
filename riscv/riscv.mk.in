@@ -1106,6 +1106,16 @@ riscv_insn_ext_p_non_simd = \
 	mulr64 \
 	mulsr64 \
 	msubr32 \
+	ave \
+	sra_u \
+	srai_u \
+	bitrev \
+	bitrevi \
+	wext \
+	wexti \
+	bpick \
+	insb \
+	maddr32 \
 
 riscv_insn_ext_p_rv64_only = \
 	kadd32 \
@@ -1144,11 +1154,6 @@ riscv_insn_list = \
 	$(riscv_insn_ext_m) \
 	$(riscv_insn_ext_f) \
 	$(riscv_insn_ext_d) \
-	$(riscv_insn_ext_zfh) \
-	$(riscv_insn_ext_q) \
-	$(riscv_insn_ext_b) \
-	$(if $(HAVE_INT128),$(riscv_insn_ext_v),) \
-	$(riscv_insn_ext_h) \
 	$(riscv_insn_ext_p) \
 	$(riscv_insn_priv) \
 
